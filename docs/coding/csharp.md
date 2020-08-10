@@ -1,8 +1,8 @@
 # C# Coding Standards
 
+[Go to layout sections](#-Layout)
+
 ## Naming
-
-
 
 ### Abbreviations
 - :x: DO NOT: use abbreviations or contractions within identifier names.
