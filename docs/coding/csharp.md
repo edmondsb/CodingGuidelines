@@ -1,11 +1,18 @@
 # C# Coding Standards
 
 ## Sections
-[Naming](#naming)     [Abbreviations](#abbreviations)     [Casing](#casing)     [Namespaces](#namespaces)     [Types](#types)     [Methods](#methods)     [Variables and Fields](#variables-and-fields)     [Miscellaneous](#miscellaneous)
+- [Naming](#naming)
+  - [Abbreviations](#abbreviations)
+  - [Casing](#casing)
+  - [Namespaces](#namespaces)
+  - [Types](#types)
+  - [Methods](#methods)
+  - [Variables and Fields](#variables-and-fields)
+  - [Miscellaneous](#miscellaneous)
 
-[Layout](#layout)
+- [Layout](#layout)
 
-[Coding](#coding)
+- [Coding](#coding)
 
 
 ## Naming
