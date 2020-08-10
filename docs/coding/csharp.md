@@ -1,6 +1,6 @@
 # C# Coding Standards
 
-[Go to layout sections](#-layout)
+[Go to layout sections](#layout)
 
 ## Naming
 
