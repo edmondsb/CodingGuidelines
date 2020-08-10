@@ -11,8 +11,36 @@
   - [Miscellaneous](#miscellaneous)
 
 - [Layout](#layout)
+  - [Comments](#comments)
+  - [Files](#files)
+  - [Whitespace](#whitespace)
 
 - [Coding](#coding)
+  - [Arrays](#arrays)
+  - [Assemblies](#assemblies)
+  - [Branches](#branches)
+  - [Classes](#classes)
+  - [Conversions](#conversions)
+  - [Dipsose()](#dipsose())
+  - [Enums](#enums)
+  - [Equality](#equality)
+  - [Exceptions](#exceptions)
+  - [Fields](#fields)
+  - [Flags](#flags)
+  - [Increment/decrement](#increment/decrement)
+  - [Interfaces](#interfaces)
+  - [Methods](#methods)
+  - [Parameters](#parameters)
+  - [Properties](#properties)
+  - [Strings](#strings)
+  - [Structs](#structs)
+  - [Synchronization](#synchronization)
+  - [Tasks](#tasks)
+  - [Threads](#threads)
+  - [ToString()](#tostring())
+  - [Types](#types)
+  - [Miscellaneous](#miscellaneous)
+
 
 
 ## Naming
@@ -209,7 +237,7 @@ Example:
 - :heavy_check_mark: CONSIDER: providing special values for commonly used combinations of flags.
 - :heavy_check_mark: DO: use powers of 2 to ensure that all flag combinations are represented uniquely.
 
-### Incement/decrement
+### Increment/decrement
 - :no_entry: AVOID: confusing usage of the increment and decrement operators.
 - :heavy_check_mark: DO: be cautious when porting code between C, C++, and C# that uses increment and decrement operators; C and C++ implementations need not follow the same rules as C#.
 
