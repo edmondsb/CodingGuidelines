@@ -21,7 +21,7 @@
   - [Branches](#branches)
   - [Classes](#classes)
   - [Conversions](#conversions)
-  - [Dipsose()](#dipsose
+  - [Dipsose()](#dipsose)
   - [Enums](#enums)
   - [Equality](#equality)
   - [Exceptions](#exceptions)
@@ -29,7 +29,7 @@
   - [Flags](#flags)
   - [Increment/decrement](#incrementdecrement)
   - [Interfaces](#interfaces)
-  - [Methods](#methods)
+  - [Methods](#methods-1)
   - [Parameters](#parameters)
   - [Properties](#properties)
   - [Strings](#strings)
