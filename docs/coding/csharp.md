@@ -6,6 +6,7 @@
 
 ### Abbreviations
 - :x: DO NOT: use abbreviations or contractions within identifier names.
+
 Example:
 
 ![image](https://github.com/edmondsb/CodingGuidelines-New/blob/master/docs/images/code.jfif)
