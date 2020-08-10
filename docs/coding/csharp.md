@@ -1,8 +1,11 @@
 # C# Coding Standards
 
 [Naming](#naming)
+
 [Layout](#layout)
+
 [Coding](#coding)
+
 
 ## Naming
 
