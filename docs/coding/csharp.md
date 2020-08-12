@@ -48,10 +48,6 @@
 ### Abbreviations
 - :x: DO NOT: use abbreviations or contractions within identifier names.
 
-Example:
->![image](https://github.com/edmondsb/CodingGuidelines-New/blob/master/docs/images/code.jfif)
-- :x: DO NOT: use any acronyms unless they are widely accepted, and even then use them consistently.
-
 ### Casing
 - :heavy_check_mark: DO: capitalize both characters in two-character acronyms, except for the first word of a camelCased identifier.
 - :heavy_check_mark: DO: capitalize only the first character in acronyms with three or more characters, except for the first word of a camelCased identifier.
