@@ -204,7 +204,7 @@
 - :x: DO NOT: over-catch. Exceptions should be allowed to propagate up the call stack unless it is clearly understood how to programmatically address those errors lower in the stack.
 - :grey_question: CONSIDER: catching a specific exception when you understand why it was thrown in a given context and can respond to the failure programmatically.
 - :no_entry: AVOID: catching System.Exception or System.SystemException except in top-level exception handlers that perform final cleanup operations before rethrowing the exception.
-- :heavy_check_mark: DO: use throw; rather than throw <exception object> inside a catch block.
+- :heavy_check_mark: DO: use throw; rather than throw exception object inside a catch block.
 - :heavy_check_mark: DO: use exception filters to avoid rethrowing an exception from within a catch block.
 - :heavy_check_mark: DO: use caution when rethrowing different exceptions.
 - :no_entry: AVOID:  throwing exceptions from exception filters.
