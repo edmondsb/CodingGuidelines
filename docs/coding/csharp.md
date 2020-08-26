@@ -21,7 +21,7 @@
   - [Branches](#branches)
   - [Classes](#classes)
   - [Conversions](#conversions)
-  - [Dipsose()](#dipsose)
+  - [Dispose()](#dispose)
   - [Enums](#enums)
   - [Equality](#equality)
   - [Exceptions](#exceptions)
@@ -56,10 +56,10 @@
 - :heavy_check_mark: DO: use camelCasing for local variable names.
 - :heavy_check_mark: DO: use uppercase literal suffixes (e.g., 1.618033988749895M).
 - :heavy_check_mark: DO: use camelCasing for variable declarations using tuple syntax. 
-- :heavy_check_mark: CONSIDER: using PascalCasing for all tuple item names.
+- :grey_question: CONSIDER: using PascalCasing for all tuple item names.
 - :heavy_check_mark: DO: use PascalCasing for namespace names.
 - :heavy_check_mark: DO: use camelCasing for parameter names.
-- :heavy_check_mark: CONSIDER: using the same casing on a propertyâ€™s backing field as that used in the property, distinguishing the backing field with an â€œ_â€ prefix. Do not, however, use two underscores; identifiers beginning with two underscores are reserved for the use of t.
+- :grey_question: CONSIDER: using the same casing on a propertyâ€™s backing field as that used in the property, distinguishing the backing field with an â€œ_â€ prefix. Do not, however, use two underscores; identifiers beginning with two underscores are reserved for the use of t.
 - :no_entry: AVOID: naming fields with camelCase.
 - :heavy_check_mark: DO: name properties with PascalCase.
 - :heavy_check_mark: DO: use PascalCasing and an â€œIâ€ prefix for interface names.
@@ -71,7 +71,7 @@
 ### Types
 - :x: DO NOT: define types without placing them into a namespace.
 - :heavy_check_mark: DO: choose meaningful names for type parameters and prefix the name with T.
-- :heavy_check_mark: CONSIDER: indicating a constraint in the name of a type parameter.
+- :grey_question: CONSIDER: indicating a constraint in the name of a type parameter.
 - :no_entry: AVOID: shadowing a type parameter of an outer type with an indentically named type parameter.
 
 ### Methods
@@ -93,16 +93,16 @@
 ### Miscellaneous
 - :heavy_check_mark: DO: treat parameter names as part of the API, and avoid changing the names if version compatibility between APIs is important.
 - :heavy_check_mark: DO: name the source file with the name of the public type it contains.
-- :heavy_check_mark: CONSIDER: giving a property the same name as its type.
+- :grey_question: CONSIDER: giving a property the same name as its type.
 - :heavy_check_mark: DO: use the same name for constructor parameters (camelCase) and properties (PascalCase) if the constructor parameters are used to simply set the property.
 - :heavy_check_mark: DO: name an exception classes with the “Exception” suffix.
 
 ## Layout
 
 ### Files
-- :heavy_check_mark: CONSIDER: organizing the directory hierarchy for source code files to match the namespace hierarchy.
+- :grey_question: CONSIDER: organizing the directory hierarchy for source code files to match the namespace hierarchy.
 - :x: DO NOT:  place more than one class in a single source file.
-- :heavy_check_mark: CONSIDER: creating a folder structure that matches the namespace hierarchy.
+- :grey_question: CONSIDER: creating a folder structure that matches the namespace hierarchy.
 
 ### Comments
 - :x: DO NOT: use comments unless they describe something that is not obvious to someone other than the developer who wrote the code.
@@ -116,15 +116,15 @@
 ## Coding
 
 ### Arrays
-- :heavy_check_mark: CONSIDER: checking for null before accessing an array rather than assuming there is an array instance.
-- :heavy_check_mark: CONSIDER: checking the array length before indexing into an array rather than assuming the length.
-- :heavy_check_mark: CONSIDER: using the index from end operator (^) rather than Length - 1 with C# 8.0 or higher.
+- :grey_question: CONSIDER: checking for null before accessing an array rather than assuming there is an array instance.
+- :grey_question: CONSIDER: checking the array length before indexing into an array rather than assuming the length.
+- :grey_question: CONSIDER: using the index from end operator (^) rather than Length - 1 with C# 8.0 or higher.
 - :heavy_check_mark: DO: use parameter arrays when a method can handle any number—including zero—of additional arguments.
 - :no_entry: AVOID: unsafe array covariance. Instead, CONSIDER converting the array to the read-only interface IEnumerable<T>, which can be safely converted via covariant conversions.
 
 ### Assemblies
 - :heavy_check_mark: DO: apply AssemblyVersionAttribute to assemblies with public types.
-- :heavy_check_mark: CONSIDER: applying AssemblyFileVersionAttribute and AssemblyCopyrightAttribute to provide additional information about the assembly.
+- :grey_question: CONSIDER: applying AssemblyFileVersionAttribute and AssemblyCopyrightAttribute to provide additional information about the assembly.
 - :heavy_check_mark: DO: apply the following information assembly attributes: System.Reflection.AssemblyCompanyAttribute, System.Reflection.AssemblyCopyrightAttribute, System.Reflection.AssemblyDescriptionAttribute, and System.Reflection.AssemblyProductAttribute.
 - :heavy_check_mark: DO: name custom attribute classes with the suffix Attribute.
 - :heavy_check_mark: DO: provide get-only properties (without public setters) on attributes with required property values.
@@ -132,8 +132,8 @@
 - :heavy_check_mark: DO: apply the AttributeUsageAttribute class to custom attributes.
 	
 ### Branches
-- :heavy_check_mark: CONSIDER: using an if-else statement instead of an overly complicated conditional expression.
-- :heavy_check_mark: CONSIDER: refactoring the method to make the control flow easier to understand if you find yourself writing for loops with complex conditionals and multiple loop variables.
+- :grey_question: CONSIDER: using an if-else statement instead of an overly complicated conditional expression.
+- :grey_question: CONSIDER: refactoring the method to make the control flow easier to understand if you find yourself writing for loops with complex conditionals and multiple loop variables.
 - :heavy_check_mark: DO: use the for loop when the number of loop iterations is known in advance and the “counter” that gives the number of iterations executed is needed in the loop.
 - :heavy_check_mark: DO: use the while loop when the number of loop iterations is not known in advance and a counter is not needed.
 - :x: DO NOT: use continue as the jump statement that exits a switch section. This is legal when the switch is inside a loop, but it is easy to become confused about the meaning of break in a later switch section.
@@ -150,7 +150,7 @@
 - :x: DO NOT: provide an implicit conversion operator if the conversion is lossy.
 - :x: DO NOT: throw exceptions from implicit conversions.
 
-### Dipsose()
+### Dispose()
 - :heavy_check_mark: DO: implement the dispose pattern on objects with resources that are scarce or expensive.
 - :heavy_check_mark: DO: unregister any AppDomain.ProcessExit events during dispose.
 - :heavy_check_mark: DO: call System.GC.SuppressFinalize() from Dispose() to avoid repeating resource cleanup and delaying garbage collection on an object.
@@ -158,12 +158,12 @@
 - :heavy_check_mark: DO: keep Dispose() simple, focusing on the resource cleanup required by finalization.
 - :no_entry: AVOID: calling Dispose() on owned objects that have a finalizer. Instead, rely on the finalization queue to clean up the instance.
 - :heavy_check_mark: DO: invoke a base class’s Dispose() method when overriding Dispose().
-- :heavy_check_mark: CONSIDER: ensuring that an object becomes unusable after Dispose() is called. After an object has been disposed, methods other than Dispose() (which could potentially be called multiple times) should throw an ObjectDisposedException.
+- :grey_question: CONSIDER: ensuring that an object becomes unusable after Dispose() is called. After an object has been disposed, methods other than Dispose() (which could potentially be called multiple times) should throw an ObjectDisposedException.
 - :heavy_check_mark: DO: implement IDisposable on types that own disposable fields (or properties) and dispose of those instances.
 - :heavy_check_mark: DO: invoke a base class’s Dispose() method from the Dispose(bool disposing) method if one exists.
 
 ### Enums
-- :heavy_check_mark: CONSIDER: adding new members to existing enums, but keep in mind the compatibility risk.
+- :grey_question: CONSIDER: adding new members to existing enums, but keep in mind the compatibility risk.
 - :no_entry: AVOID: creating enums that represent an “incomplete” set of values, such as product version numbers.
 - :no_entry: AVOID: creating “reserved for future use” values in an enum.
 - :no_entry: AVOID: enums that contain a single value.
@@ -171,7 +171,7 @@
 - :heavy_check_mark: DO: use the FlagsAttribute to mark enums that contain flags.
 - :heavy_check_mark: DO: provide a None value equal to 0 for all flag enums.
 - :no_entry: AVOID: creating flag enums where the zero value has a meaning other than “no flags are set.”
-- :heavy_check_mark: CONSIDER: using the Enumerable.Empty<T>() method instead.
+- :grey_question: CONSIDER: using the Enumerable.Empty<T>() method instead.
 
 ### Equality
 - :no_entry: AVOID: using equality conditionals with binary floating-point types. Either subtract the two values and see if their difference is less than a tolerance, or use the decimal type.
@@ -202,7 +202,7 @@
 - :heavy_check_mark: DO: use nameof for the paramName argument passed into argument exception types that take such a parameter. Examples of such exceptions include ArgumentException, ArgumentOutOfRangeException, and ArgumentNullException.
 - :no_entry: AVOID: exception reporting or logging lower in the call stack.
 - :x: DO NOT: over-catch. Exceptions should be allowed to propagate up the call stack unless it is clearly understood how to programmatically address those errors lower in the stack.
-- :heavy_check_mark: CONSIDER: catching a specific exception when you understand why it was thrown in a given context and can respond to the failure programmatically.
+- :grey_question: CONSIDER: catching a specific exception when you understand why it was thrown in a given context and can respond to the failure programmatically.
 - :no_entry: AVOID: catching System.Exception or System.SystemException except in top-level exception handlers that perform final cleanup operations before rethrowing the exception.
 - :heavy_check_mark: DO: use throw; rather than throw <exception object> inside a catch block.
 - :heavy_check_mark: DO: use exception filters to avoid rethrowing an exception from within a catch block.
@@ -214,22 +214,22 @@
 - :heavy_check_mark: DO: create a new exception type to communicate a unique program error that cannot be communicated using an existing CLR exception and that can be programmatically handled in a different way than any other existing CLR exception type.
 - :heavy_check_mark: DO: provide a parameterless constructor on all custom exception types. Also provide constructors that take a message and an inner exception.
 - :heavy_check_mark: DO: make exceptions runtime-serializable.
-- :heavy_check_mark: CONSIDER: providing exception properties for programmatic access to extra information relevant to the exception.
-- :heavy_check_mark: CONSIDER: wrapping specific exceptions thrown from the lower layer in a more appropriate exception if the lower-layer exception does not make sense in the context of the higher-layer operation.
+- :grey_question: CONSIDER: providing exception properties for programmatic access to extra information relevant to the exception.
+- :grey_question: CONSIDER: wrapping specific exceptions thrown from the lower layer in a more appropriate exception if the lower-layer exception does not make sense in the context of the higher-layer operation.
 - :heavy_check_mark: DO: specify the inner exception when wrapping exceptions.
 - :heavy_check_mark: DO: target developers as the audience for exceptions, identifying both the problem and the mechanism to resolve it, where possible.
-- :heavy_check_mark: CONSIDER: registering an unhandled exception event handler for debugging, logging, and emergency shutdown purposes.
+- :grey_question: CONSIDER: registering an unhandled exception event handler for debugging, logging, and emergency shutdown purposes.
 - :heavy_check_mark: DO: use the SetLastErrorAttribute on Windows to turn APIs that use SetLastError error codes into methods that throw Win32Exception.
 
 ### Fields
-- :heavy_check_mark: CONSIDER:  initializing static fields inline rather than explicitly using static constructors or declaration assigned values.
+- :grey_question: CONSIDER:  initializing static fields inline rather than explicitly using static constructors or declaration assigned values.
 - :heavy_check_mark: DO: use public static readonly modified fields for predefined object instances prior to C# 6.0.
 - :no_entry: AVOID: changing a public readonly modified field in pre-C# 6.0 to a read-only automatically implemented property in C# 6.0 (or later) if version API compatibility is required.
 - :no_entry: AVOID: publicly exposed nested types. The only exception is if the declaration of such a type is unlikely or pertains to an advanced customization scenario.
 
 ### Flags
-- :heavy_check_mark: CONSIDER: using the default 32-bit integer type as the underlying type of an enum. Use a smaller type only if you must do so for interoperability; use a larger type only if you are creating a flags enum with more than 32 flags.
-- :heavy_check_mark: CONSIDER: providing special values for commonly used combinations of flags.
+- :grey_question: CONSIDER: using the default 32-bit integer type as the underlying type of an enum. Use a smaller type only if you must do so for interoperability; use a larger type only if you are creating a flags enum with more than 32 flags.
+- :grey_question: CONSIDER: providing special values for commonly used combinations of flags.
 - :heavy_check_mark: DO: use powers of 2 to ensure that all flag combinations are represented uniquely.
 
 ### Increment/decrement
@@ -238,11 +238,11 @@
 
 ### Interfaces
 - :x: DO NOT: add abstract members to an interface that has already been published.
-- :heavy_check_mark: CONSIDER: using extension methods or an additional interface in place of default interface members when adding methods to a published interface.
+- :grey_question: CONSIDER: using extension methods or an additional interface in place of default interface members when adding methods to a published interface.
 - :heavy_check_mark: DO: use extension methods when the interface providing the polymorphic behavior is not under your control.
 - :heavy_check_mark: DO: use an additional interface when properties are necessary for extending polymorphic behavior for framework support prior to .NET Core 3.0.
-- :heavy_check_mark: CONSIDER: interfaces over abstract classes for polymorphic behavior starting with in C# 8.0/.NET Core 3.0 and abstract classes prior to C# 8.0.
-- :heavy_check_mark: CONSIDER: defining an interface if you need to support its functionality on types that already inherit from some other type.
+- :grey_question: CONSIDER: interfaces over abstract classes for polymorphic behavior starting with in C# 8.0/.NET Core 3.0 and abstract classes prior to C# 8.0.
+- :grey_question: CONSIDER: defining an interface if you need to support its functionality on types that already inherit from some other type.
 - :no_entry: AVOID: using “marker” interfaces with no members; use attributes instead.
 
 ### Methods
@@ -252,14 +252,14 @@
 - :x: DO NOT: throw exceptions from implementations of GetHashCode(), Equals(), ==, and !=.
 - :heavy_check_mark: DO: implement finalizer methods only on objects with resources that don't have finalizers but still require cleanup.
 - :heavy_check_mark: DO: refactor a finalization method to call the same code as IDisposable, perhaps simply by calling the Dispose() method.
-- :heavy_check_mark: CONSIDER: terminating the process by calling System.Environment.FailFast() if the program encounters a scenario where it is unsafe to continue execution.
+- :grey_question: CONSIDER: terminating the process by calling System.Environment.FailFast() if the program encounters a scenario where it is unsafe to continue execution.
 - :no_entry: AVOID: misleading the caller with generic methods that are not as type-safe as they appear.
 - :no_entry: AVOID: the anonymous method syntax in new code; prefer the more compact lambda expression syntax.
 - :heavy_check_mark: DO: use the null-conditional operator prior to calling Invoke() starting in C# 6.0.
 - :heavy_check_mark: DO: use System.Linq.Enumerable.Any() rather than calling patents.Count() when checking whether there are more than zero items.
 - :heavy_check_mark: DO: use a collection’s Count property (if available) instead of calling the System.Linq.Enumerable.Count() method.
 - :x: DO NOT: call an OrderBy() following a prior OrderBy() method call. Use ThenBy() to sequence items by more than one value.
-- :heavy_check_mark: CONSIDER: using the standard query operators (method call form) if the query involves operations that do not have a query expression syntax, such as Count(), TakeWhile(), or Distinct().
+- :grey_question: CONSIDER: using the standard query operators (method call form) if the query involves operations that do not have a query expression syntax, such as Count(), TakeWhile(), or Distinct().
 - :heavy_check_mark: DO: create public managed wrappers around unmanaged methods that use the conventions of managed code, such as structured exception handling.
 - :heavy_check_mark: DO: declare extern methods as private or internal.
 - :heavy_check_mark: DO: provide public wrapper methods that use managed conventions such as structured exception handling, use of enums for special values, and so on.
@@ -268,7 +268,7 @@
 ### Parameters
 - :heavy_check_mark: DO: provide good defaults for all parameters where possible.
 - :heavy_check_mark: DO: provide simple method overloads that have a small number of required parameters.
-- :heavy_check_mark: CONSIDER: organizing overloads from the simplest to the most complex.
+- :grey_question: CONSIDER: organizing overloads from the simplest to the most complex.
 - :heavy_check_mark: DO: provide constructor optional parameters and/or convenience constructor overloads that initialize properties with good defaults.
 - :heavy_check_mark: DO: simplify the wrapper methods by choosing default values for unnecessary parameters.
 - :no_entry: AVOID: providing constructor parameters to initialize attribute properties corresponding to the optional arguments (and, therefore, avoid overloading custom attribute constructors).
@@ -327,11 +327,11 @@
 
 ### ToString()
 - :heavy_check_mark: DO: override ToString() whenever useful developer-oriented diagnostic strings can be returned.
-- :heavy_check_mark: CONSIDER: trying to keep the string returned from ToString() short.
+- :grey_question: CONSIDER: trying to keep the string returned from ToString() short.
 - :x: DO NOT: return an empty string or null from ToString().
 - :x: DO NOT: throw exceptions or make observable side effects (change the object state) from ToString().
 - :heavy_check_mark: DO provide an overloaded ToString(string format) or implement IFormattable if the return value requires formatting or is culture-sensitive (e.g., DateTime).
-- :heavy_check_mark: CONSIDER: returning a unique string from ToString() so as to identify the object instance.
+- :grey_question: CONSIDER: returning a unique string from ToString() so as to identify the object instance.
 
 ### Types
 - :no_entry: AVOID: using implicitly typed local variables unless the data type of the assigned value is obvious.
@@ -340,16 +340,16 @@
 - :heavy_check_mark: DO: make value types immutable.
 - :no_entry: AVOID: mutable value types.
 - :no_entry: AVOID: implementing multiple constructions of the same generic interface in one type.
-- :heavy_check_mark: CONSIDER: whether the readability benefit of defining your own delegate type outweighs the convenience of using a predefined generic delegate type.
-- :heavy_check_mark: CONSIDER: omitting the types from lambda formal parameter lists when the types are obvious to the reader or when they are an insignificant detail.
+- :grey_question: CONSIDER: whether the readability benefit of defining your own delegate type outweighs the convenience of using a predefined generic delegate type.
+- :grey_question: CONSIDER: omitting the types from lambda formal parameter lists when the types are obvious to the reader or when they are an insignificant detail.
 - :heavy_check_mark: DO: use System.EventArgs or a type that derives from System.EventArgs for a TEventArgs type.
-- :heavy_check_mark: CONSIDER: using a subclass of System.EventArgs as the event argument type (TEventArgs) unless you are sure the event will never need to carry any data.
-- :heavy_check_mark: CONSIDER: using System.EventHandler<T> instead of manually creating new delegate types for event handlers unless the parameter names of a custom type offer significant clarification.
+- :grey_question: CONSIDER: using a subclass of System.EventArgs as the event argument type (TEventArgs) unless you are sure the event will never need to carry any data.
+- :grey_question: CONSIDER: using System.EventHandler<T> instead of manually creating new delegate types for event handlers unless the parameter names of a custom type offer significant clarification.
 
 ### Miscellaneous
 - :heavy_check_mark: DO: favor consistency rather than variety within your code.
 - :heavy_check_mark: DO: rely on System.WriteLine() and System.Environment.NewLine rather than \n to accommodate Windows-specific operating system idiosyncrasies with the same code that runs on Linux and iOS.
-- :heavy_check_mark: CONSIDER: registering the finalization code with the AppDomain.ProcessExit to increase the probability that resource cleanup will execute before the process exits.
+- :grey_question: CONSIDER: registering the finalization code with the AppDomain.ProcessExit to increase the probability that resource cleanup will execute before the process exits.
 - :no_entry: AVOID: referencing other objects that are not being finalized during finalization.
 - :no_entry: AVOID: capturing loop variables in anonymous functions.
 - :heavy_check_mark: DO: check that the value of a delegate is not null before invoking it (possibly by using the null-conditional operator in C# 6.0).
@@ -358,6 +358,6 @@
 - :heavy_check_mark: DO: use query expression syntax to make queries easier to read, particularly if they involve complex from, let, join, or group clauses.
 - :x: DO NOT: make any unwarranted assumptions about the order in which elements of a collection will be enumerated. If the collection is not documented as enumerating its elements in a particular order, it is not guaranteed to produce elements in any particula
 - :x: DO NOT: represent an empty collection with a null reference.
-- :heavy_check_mark: CONSIDER: using nonrecursive algorithms when iterating over potentially deep data structures.
+- :grey_question: CONSIDER: using nonrecursive algorithms when iterating over potentially deep data structures.
 - :heavy_check_mark: DO: use delegate types that match the signature of the desired method when an unmanaged API requires a function pointer.
 - :heavy_check_mark: DO: use ref parameters rather than pointer types when possible.
