@@ -59,7 +59,7 @@
 - :grey_question: CONSIDER: using PascalCasing for all tuple item names.
 - :heavy_check_mark: DO: use PascalCasing for namespace names.
 - :heavy_check_mark: DO: use camelCasing for parameter names.
-- :grey_question: CONSIDER: using the same casing on a propertyâ€™s backing field as that used in the property, distinguishing the backing field with an â€œ_â€ prefix. Do not, however, use two underscores; identifiers beginning with two underscores are reserved for the use of t.
+- :grey_question: CONSIDER: using the same casing on a property's backing field as that used in the property, distinguishing the backing field with an "_" prefix. Do not, however, use two underscores; identifiers beginning with two underscores are reserved for the use of t.
 - :no_entry: AVOID: naming fields with camelCase.
 - :heavy_check_mark: DO: name properties with PascalCase.
 - :heavy_check_mark: DO: use PascalCasing and an â€œIâ€ prefix for interface names.
