@@ -194,7 +194,7 @@
 - :x: DO NOT: use exceptions for handling normal, expected conditions; use them for exceptional, unexpected conditions.
 - :no_entry: AVOID: throwing exceptions from property getters.
 - :heavy_check_mark: DO: preserve the original property value if the property throws an exception.
-- :heavy_check_mark: DO: use nameof(value) (which resolves to “value”) for the paramName argument when creating ArgumentException() or ArgumentNullException() type exceptions (value" is the implicit name of the parameter on property setters)."
+- :heavy_check_mark: DO: use nameof(value) (which resolves to "value") for the paramName argument when creating ArgumentException() or ArgumentNullException() type exceptions (value" is the implicit name of the parameter on property setters)."
 - :x: DO NOT: throw exceptions from finalizer methods.
 - :heavy_check_mark: DO: throw an ArgumentException or one of its subtypes if bad arguments are passed to a member. Prefer the most derived exception type (e.g., ArgumentNullException), if applicable.
 - :x: DO NOT: throw a System.SystemException or an exception type that derives from it.
