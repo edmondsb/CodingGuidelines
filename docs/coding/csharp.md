@@ -84,7 +84,7 @@
 - :heavy_check_mark: DO: use the C# keyword rather than the BCL name when specifying a data type (e.g., string rather than String).
 - :x: DO NOT: use a constant for any value that can possibly change over time. The value of pi and the number of protons in an atom of gold are constants; the price of gold, the name of your company, and the version number of your program can change.
 - :heavy_check_mark: DO: name properties using a noun, noun phrase, or adjective.
-- :heavy_check_mark: DO: favor prefixing Boolean properties with “Is,” “Can,” or “Has,” when that practice adds value.
+- :heavy_check_mark: DO: favor prefixing Boolean properties with "Is," "Can," or "Has," when that practice adds value.
 - :heavy_check_mark: DO: declare all instance fields as private (and expose them via a property).
 - :heavy_check_mark: DO: use constant fields for values that will never change.
 - :no_entry: AVOID: constant fields for values that will change over time.
