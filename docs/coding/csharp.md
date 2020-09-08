@@ -164,7 +164,7 @@
 
 ### Enums
 - :grey_question: CONSIDER: adding new members to existing enums, but keep in mind the compatibility risk.
-- :no_entry: AVOID: creating enums that represent an “incomplete” set of values, such as product version numbers.
+- :no_entry: AVOID: creating enums that represent an "incomplete" set of values, such as product version numbers.
 - :no_entry: AVOID: creating "reserved for future use" values in an enum.
 - :no_entry: AVOID: enums that contain a single value.
 - :heavy_check_mark: DO: provide a value of 0 (none) for simple enums, knowing that 0 will be the default value when no explicit initialization is provided.
