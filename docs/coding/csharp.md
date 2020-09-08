@@ -170,7 +170,7 @@
 - :heavy_check_mark: DO: provide a value of 0 (none) for simple enums, knowing that 0 will be the default value when no explicit initialization is provided.
 - :heavy_check_mark: DO: use the FlagsAttribute to mark enums that contain flags.
 - :heavy_check_mark: DO: provide a None value equal to 0 for all flag enums.
-- :no_entry: AVOID: creating flag enums where the zero value has a meaning other than “no flags are set.”
+- :no_entry: AVOID: creating flag enums where the zero value has a meaning other than "no flags are set."
 - :grey_question: CONSIDER: using the Enumerable.Empty<T>() method instead.
 
 ### Equality
