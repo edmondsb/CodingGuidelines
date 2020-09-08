@@ -95,7 +95,7 @@
 - :heavy_check_mark: DO: name the source file with the name of the public type it contains.
 - :grey_question: CONSIDER: giving a property the same name as its type.
 - :heavy_check_mark: DO: use the same name for constructor parameters (camelCase) and properties (PascalCase) if the constructor parameters are used to simply set the property.
-- :heavy_check_mark: DO: name an exception classes with the “Exception” suffix.
+- :heavy_check_mark: DO: name an exception classes with the "Exception" suffix.
 
 ## Layout
 
