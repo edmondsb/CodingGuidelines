@@ -18,7 +18,7 @@ jobs:
         # The source path to the file(s) or folder(s) to copy from
         src_path: /docs/
         # The destination path to copy the file(s) or folder(s) to
-        dst_path: edmondsb-websitetest.github.io /
+        dst_path: /
         # The name of the owner of the repository to push to
         dst_owner: edmondsb 
         # The name of the repository to push to
