@@ -16,7 +16,7 @@ jobs:
         # Personal access token
         personal_token: 635073c8e04cf896f648d6a9ad90f0c8d7770923
         # The source path to the file(s) or folder(s) to copy from
-        src_path: CodingGuidelines-New/docs/
+        src_path: /docs/
         # The destination path to copy the file(s) or folder(s) to
         dst_path: edmondsb-websitetest.github.io /
         # The name of the owner of the repository to push to
