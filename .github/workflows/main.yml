@@ -14,7 +14,7 @@ jobs:
       uses: andstor/copycat-action@v3.2.3
       with:
         # Personal access token
-        personal_token: 635073c8e04cf896f648d6a9ad90f0c8d7770923
+        personal_token: ${{secrets.GuidelinesWebsite}}
         # The source path to the file(s) or folder(s) to copy from
         src_path: /docs/
         # The destination path to copy the file(s) or folder(s) to
