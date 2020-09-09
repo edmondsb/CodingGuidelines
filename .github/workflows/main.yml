@@ -8,7 +8,7 @@ on: push
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   copy:
-    runs-on: ubuntu-lastest
+    runs-on: ubuntu-latest
     steps:
     - name: Copycat Action
       uses: andstor/copycat-action@v3.2.3
