@@ -1,0 +1,30 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Copy
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on: 
+  push:
+    branches: 
+      - master
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  copy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Copycat Action
+      uses: andstor/copycat-action@v3.2.3
+      with:
+        # Personal access token
+        personal_token: ${{ secrets.GuidelinesWebsite }}
+        # The source path to the file(s) or folder(s) to copy from
+        src_path: /docs/
+        # The destination path to copy the file(s) or folder(s) to
+        dst_path: /
+        # The name of the owner of the repository to push to
+        dst_owner: edmondsb 
+        # The name of the repository to push to
+        dst_repo_name: GuidelinesWebsite
+        # Set to true if the dst_path should be emptied before copying
+        clean: true
