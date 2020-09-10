@@ -28,3 +28,25 @@ jobs:
         dst_repo_name: GuidelinesWebsite
         # Set to true if the dst_path should be emptied before copying
         clean: true
+    - name: String Replace
+  # You may pin to the exact commit or the version.
+  # uses: bejoistic/str-replace@efbbb67d349eaf509144d4ce1202ed0c6fb3e340
+      uses: bejoistic/str-replace@v1.0.2
+      with:
+        include: _config.yml
+        # The string we want to replace
+        find: "baseurl"
+        # The new string to replace with
+        replace: "#baseurl"
+    - name: String Replace
+  # You may pin to the exact commit or the version.
+  # uses: bejoistic/str-replace@efbbb67d349eaf509144d4ce1202ed0c6fb3e340
+      uses: bejoistic/str-replace@v1.0.2
+      with:
+        # A regular expression of files to include in our find and replace
+        include: _config.yml
+        # The string we want to replace
+        find: "url"
+        # The new string to replace with
+        replace: "#url"
+      
