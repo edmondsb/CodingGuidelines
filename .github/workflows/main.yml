@@ -22,6 +22,6 @@ jobs:
         # The name of the owner of the repository to push to
         dst_owner: edmondsb 
         # The name of the repository to push to
-        dst_repo_name: Guidelies
+        dst_repo_name: GuidelinesWebsite
         # Set to true if the dst_path should be emptied before copying
         clean: true
